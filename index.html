@@ -24,7 +24,7 @@
 
     var formData = new FormData(document.getElementById("emailForm"));
 
-    fetch("", {
+    fetch("send_email.php", {  // Replace "send_email.php" with the actual URL to your server-side script
         method: "POST",
         body: formData
     })
@@ -35,26 +35,9 @@
     })
     .catch(error => {
         console.error(error);
-        alert("An error occurred while sending the email." + error);
+        alert("An error occurred while sending the email: " + error);
     });
 });
     </script>
 </body>
 </html>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $email = $_POST["email"];
-    $subject = $_POST["subject"];
-    $message = $_POST["message"];
-
-    $to = "keerubarbie@gmail.com"; // Replace with recipient email
-    $headers = "From: keerusuja@gmail.com"; // Replace with sender email
-
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Email sent successfully";
-    } else {
-        echo "Email could not be sent";
-    }
-}
-?>
