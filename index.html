@@ -24,8 +24,8 @@
 
     var formData = new FormData(document.getElementById("emailForm"));
 
-    fetch("<?php echo $_SERVER['PHP_SELF']; ?>", {
-        method: "POST",
+    fetch("", {
+        method: "GET",
         body: formData
     })
     .then(response => response.text())
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $headers = "From: keerusuja@gmail.com"; // Replace with sender email
 
     if (mail($to, $subject, $message, $headers)) {
-        echo "Email sent successfully uaayyy";
+        echo "Email sent successfully";
     } else {
         echo "Email could not be sent";
     }
