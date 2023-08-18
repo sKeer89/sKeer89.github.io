@@ -32,14 +32,14 @@
                 message: message
             };
 
-            fetch("", {
+            fetch("<?php echo $_SERVER['PHP_SELF']; ?>", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(data)
             })
-            .then(response => response.json())
+            .then(response => response.text())
             .then(result => {
                 console.log(result);
                 alert("Email sent successfully!");
