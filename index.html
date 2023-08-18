@@ -20,35 +20,24 @@
 
     <script>
         document.getElementById("emailForm").addEventListener("submit", function(event) {
-            event.preventDefault();
+    event.preventDefault();
 
-            var email = document.getElementById("email").value;
-            var subject = document.getElementById("subject").value;
-            var message = document.getElementById("message").value;
+    var formData = new FormData(document.getElementById("emailForm"));
 
-            var data = {
-                email: email,
-                subject: subject,
-                message: message
-            };
-
-            fetch("<?php echo $_SERVER['PHP_SELF']; ?>", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.text())
-            .then(result => {
-                console.log(result);
-                alert("Email sent successfully!");
-            })
-            .catch(error => {
-                console.error(error);
-                alert("An error occurred while sending the email." + error);
-            });
-        });
+    fetch("<?php echo $_SERVER['PHP_SELF']; ?>", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+        console.log(result);
+        alert("Email sent successfully!");
+    })
+    .catch(error => {
+        console.error(error);
+        alert("An error occurred while sending the email." + error);
+    });
+});
     </script>
 </body>
 </html>
@@ -63,9 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $headers = "From: keerusuja@gmail.com"; // Replace with sender email
 
     if (mail($to, $subject, $message, $headers)) {
-        echo json_encode(["message" => "Email sent successfully"]);
+        echo "Email sent successfully";
     } else {
-        echo json_encode(["message" => "Email could not be sent"]);
+        echo "Email could not be sent";
     }
 }
 ?>
