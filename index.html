@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Zoomable sunburst</title>
-<link rel="stylesheet" type="text/css" href="./inspector.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zoomable sunburst</title>
+    <style>
+        body {
+            width: 100%;
+            /* Set width to 100% of the viewport */
+            height: 100%;
+            /* Set height to 100% of the viewport */
+            overflow: hidden;
+            /* Prevent content overflow */
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+        }
+        
+        #container {
+            width: 800px;
+            /* Set a fixed width for the container */
+            height: 600px;
+            /* Set a fixed height for the container */
+            margin: auto;
+            /* Center the container horizontally */
+            overflow: hidden;
+            /* Prevent content overflow */
+        }
+    </style>
+</head>
+
 <body>
-<script type="module">
+    <div id="container"></div>
+    <script type="module">
+        import define from "./index.js"; import {Runtime, Library, Inspector} from "./runtime.js"; const runtime = new Runtime(); const main = runtime.module(define, Inspector.into(document.getElementById('container')));
+    </script>
+</body>
 
-import define from "./index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
-
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
-
-</script>
+</html>
