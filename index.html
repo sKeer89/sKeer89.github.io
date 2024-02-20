@@ -1,43 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Email Form</title>
-    <style>
-        /* Your CSS styles here */
-    </style>
-</head>
+<meta charset="utf-8">
+<title>Zoomable sunburst</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
 <body>
-    <h1>Send an Email</h1>
-    <form id="emailForm" method="GET">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-        <input type="submit" value="Send Email">
-    </form>
+<script type="module">
 
-    <script>
-        document.getElementById("emailForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
 
-    var formData = new FormData(document.getElementById("emailForm"));
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
 
-    fetch("send_email.php", {  // Replace "send_email.php" with the actual URL to your server-side script
-        method: "GET",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(result => {
-        console.log(result);
-        alert("Email sent successfully!");
-    })
-    .catch(error => {
-        console.error(error);
-        alert("An error occurred while sending the email: " + error);
-    });
-});
-    </script>
-</body>
-</html>
+</script>
