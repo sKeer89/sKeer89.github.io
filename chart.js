@@ -7,9 +7,7 @@ function _chart(d3, data) {
     // Specify the chart’s dimensions.
     /*
      */
-    const width = 1000;
-    const height = 2100;
-    const radius = width / 6;
+    const radius = 40;
 
     // Create the color scale.
     const color = d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, data.children.length + 1));
@@ -34,9 +32,12 @@ function _chart(d3, data) {
 
     // Create the SVG container.
     const svg = d3.create("svg")
+        .attr("viewBox", "-225,-125,450,250")
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("xmlns", "http://www.w3.org/2000/svg")
+        .style("font", "3px sans-serif");
 
-    .attr("viewBox", [-700, -700, 2100, 2100])
-        .style("font", "10px sans-serif");
 
     // Append the arcs.
     const path = svg.append("g")
