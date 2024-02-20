@@ -1,11 +1,6 @@
 function _1(md) {
     return (
-        md `<div style="color: grey; font: 13px/25.5px var(--sans-serif); text-transform: uppercase;"><h1 style="display: none;">Zoomable sunburst</h1><a href="https://d3js.org/">D3</a> › <a href="/@d3/gallery">Gallery</a></div>
-
-# Zoomable sunburst
-
-This variant of a [sunburst diagram](/@d3/sunburst/2?intent=fork) shows only two layers of the hierarchy at a time. Click a node to zoom in, or the center to zoom out. Compare to an [icicle](/@d3/zoomable-icicle).`
-    )
+        md)
 }
 
 function _chart(d3, data) {
