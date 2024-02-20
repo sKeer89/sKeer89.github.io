@@ -152,6 +152,6 @@ export default function define(runtime, observer) {
     main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
     //main.variable(observer()).define(["md"], _1);
     main.variable(observer("chart")).define("chart", ["d3", "data"], _chart);
-    //main.variable(observer("data")).define("data", ["FileAttachment"], _data);
+    main.variable(observer("data")).define("data", ["FileAttachment"], _data);
     return main;
 }
