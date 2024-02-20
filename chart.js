@@ -65,7 +65,7 @@ function _chart(d3, data) {
         .attr("dy", "0.35em")
         .attr("fill-opacity", d => +labelVisible(d.current))
         .attr("transform", d => labelTransform(d.current))
-        .text(d => d.data.name);
+        .text(d => wrapText(d.data.name, 80));
 
     const parent = svg.append("circle")
         .datum(root)
@@ -73,6 +73,29 @@ function _chart(d3, data) {
         .attr("fill", "none")
         .attr("pointer-events", "all")
         .on("click", clicked);
+
+    function wrapText(text, width) {
+        const words = text.split(/\s+/).reverse();
+        let line = [];
+        let lineNumber = 0;
+        const lineHeight = 1.1; // ems
+        const y = label.attr("dy");
+        let dy = parseFloat(y);
+
+        let tspan = label.text(null).append("tspan").attr("x", 0).attr("dy", dy + "em");
+
+        while (words.length > 0) {
+            let word = words.pop();
+            line.push(word);
+            tspan.text(line.join(" "));
+            if (tspan.node().getComputedTextLength() > width) {
+                line.pop();
+                tspan.text(line.join(" "));
+                line = [word];
+                tspan = label.append("tspan").attr("x", 0).attr("dy", `${++lineNumber * lineHeight + dy}em`).text(word);
+            }
+        }
+    }
 
     // Handle zoom on click.
     function clicked(event, p) {

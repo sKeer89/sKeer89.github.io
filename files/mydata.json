@@ -86,15 +86,97 @@
             "children": [{
                     "name": "T-Mobile",
                     "children": [
+                        { "name": "Billing/Payment Issues", "value": 4000 },
+                        { "name": "Network/Signal Problems", "value": 3500 },
+                        { "name": "Account/Plan Management", "value": 2500 },
+                        { "name": "Customer Service Interaction", "value": 2000 },
+                        { "name": "Technical Support/Device Issues", "value": 1800 },
+                        { "name": "Coverage/Service Availability", "value": 1500 },
+                        { "name": "Data/Internet Speed Issues", "value": 1200 },
+                        { "name": "Roaming/International Usage", "value": 1000 },
+                        { "name": "Device Activation/Setup Problems", "value": 800 },
+                        { "name": "Billing/Payment Disputes", "value": 700 },
+                        { "name": "Account Termination/Cancellation", "value": 600 },
+                        { "name": "Upgrade/Device Purchase Assistance", "value": 500 },
+                        { "name": "Promotions/Discounts", "value": 400 },
+                        { "name": "Account Security/Privacy Concerns", "value": 300 },
+                        { "name": "Store/Location Experience", "value": 246 }
+                    ]
+                },
+                {
+                    "name": "Verizon",
+                    "children": [
+                        { "name": "Billing/Payment Issues", "value": 3500 },
+                        { "name": "Network/Signal Problems", "value": 3000 },
+                        { "name": "Account/Plan Management", "value": 2500 },
+                        { "name": "Customer Service Interaction", "value": 2000 },
+                        { "name": "Technical Support/Device Issues", "value": 1800 },
+                        { "name": "Coverage/Service Availability", "value": 1500 },
+                        { "name": "Data/Internet Speed Issues", "value": 1200 },
+                        { "name": "Roaming/International Usage", "value": 1000 },
+                        { "name": "Device Activation/Setup Problems", "value": 800 },
+                        { "name": "Billing/Payment Disputes", "value": 700 },
+                        { "name": "Account Termination/Cancellation", "value": 600 },
+                        { "name": "Upgrade/Device Purchase Assistance", "value": 500 },
+                        { "name": "Promotions/Discounts", "value": 400 },
+                        { "name": "Account Security/Privacy Concerns", "value": 300 },
+                        { "name": "Store/Location Experience", "value": 296 }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Retail",
+            "children": [{
+                    "name": "Amazon",
+                    "children": [
+                        { "name": "Delivery Issues", "value": 30000 },
+                        { "name": "Product/Service Issues", "value": 25000 },
+                        { "name": "Account/Subscription Issues", "value": 20000 },
+                        { "name": "Refund/Reimbursement Issues", "value": 15000 },
+                        { "name": "Technical Support Issues ", "value": 15000 },
+                        { "name": "Communication Issues", "value": 10000 },
+                        { "name": "Billing/Payment Issues", "value": 10000 },
+                        { "name": "Quality/Defective Product Issues", "value": 8000 },
+                        { "name": "Shipping/Tracking Issues", "value": 7000 },
+                        { "name": "Website/App Glitches", "value": 6000 },
+                        { "name": "Security/Privacy Concerns", "value": 5000 },
+                        { "name": "Unauthorized Charges", "value": 4000 },
+                        { "name": "Membership/Subscription Management", "value": 3000 },
+                        { "name": "Fraudulent Sellers/Counterfeit Items", "value": 3000 },
+                        { "name": "Others", "value": 2000 }
+                    ]
+                },
+                {
+                    "name": "Apple",
+                    "children": [
+                        { "name": "Technical Issues with Devices (iPhone, iPad, Mac, etc.)", "value": 20000 },
+                        { "name": "Software/Applications Malfunctions", "value": 15000 },
+                        { "name": "Account/Subscription Management", "value": 12000 },
+                        { "name": "Billing/Payment Issues (iTunes, App Store, etc.)", "value": 10000 },
+                        { "name": "Warranty/Repair Requests", "value": 8000 },
+                        { "name": "iCloud/Storage Issues", "value": 6000 },
+                        { "name": "Security/Privacy Concerns", "value": 5000 },
+                        { "name": "Device Activation/Setup Problems", "value": 4000 },
+                        { "name": "Order/Shipping Issues (Apple Online Store)", "value": 3000 },
+                        { "name": "Accessibility/Usability Assistance", "value": 2000 },
+                        { "name": "Apple Music/Other Subscription Services", "value": 2000 },
+                        { "name": "iTunes/App Store Content Issues", "value": 1500 },
+                        { "name": "Product Return/Exchange Requests", "value": 1000 },
+                        { "name": "Education/Training Support", "value": 500 },
+                        { "name": "AppleCare Support/Service Plans ", "value": 500 }
+                    ]
+                }, {
+                    "name": "E-Bay",
+                    "children": [
                         { "name": "Converters", "value": 721 },
                         { "name": "DelimitedTextConverter", "value": 4294 },
                         { "name": "GraphMLConverter", "value": 9800 },
                         { "name": "IDataConverter", "value": 1314 },
                         { "name": "JSONConverter", "value": 2220 }
                     ]
-                },
-                {
-                    "name": "Verizon",
+                }, {
+                    "name": "Aldi",
                     "children": [
                         { "name": "Converters", "value": 721 },
                         { "name": "DelimitedTextConverter", "value": 4294 },
@@ -106,46 +188,6 @@
             ]
         },
         {
-            "name": "Retail",
-            "children": [{
-                "name": "Amazon",
-                "children": [
-                    { "name": "Converters", "value": 721 },
-                    { "name": "DelimitedTextConverter", "value": 4294 },
-                    { "name": "GraphMLConverter", "value": 9800 },
-                    { "name": "IDataConverter", "value": 1314 },
-                    { "name": "JSONConverter", "value": 2220 }
-                ]
-            }, {
-                "name": "Apple",
-                "children": [
-                    { "name": "Converters", "value": 721 },
-                    { "name": "DelimitedTextConverter", "value": 4294 },
-                    { "name": "GraphMLConverter", "value": 9800 },
-                    { "name": "IDataConverter", "value": 1314 },
-                    { "name": "JSONConverter", "value": 2220 }
-                ]
-            }, {
-                "name": "E-Bay",
-                "children": [
-                    { "name": "Converters", "value": 721 },
-                    { "name": "DelimitedTextConverter", "value": 4294 },
-                    { "name": "GraphMLConverter", "value": 9800 },
-                    { "name": "IDataConverter", "value": 1314 },
-                    { "name": "JSONConverter", "value": 2220 }
-                ]
-            }, {
-                "name": "Aldi",
-                "children": [
-                    { "name": "Converters", "value": 721 },
-                    { "name": "DelimitedTextConverter", "value": 4294 },
-                    { "name": "GraphMLConverter", "value": 9800 },
-                    { "name": "IDataConverter", "value": 1314 },
-                    { "name": "JSONConverter", "value": 2220 }
-                ]
-            }]
-        },
-        {
             "name": "Airlines",
             "children": [
                 { "name": "American Air", "value": 4116 }
@@ -154,53 +196,42 @@
         {
             "name": "Railways",
             "children": [{
-                    "name": "Virigin Trains",
-                    "children": [
-                        { "name": "add", "value": 593 },
-                        { "name": "and", "value": 330 },
-                        { "name": "average", "value": 287 },
-                        { "name": "count", "value": 277 },
-                        { "name": "distinct", "value": 292 },
-                        { "name": "div", "value": 595 },
-                        { "name": "eq", "value": 594 },
-                        { "name": "fn", "value": 460 },
-                        { "name": "gt", "value": 603 },
-                        { "name": "gte", "value": 625 },
-                        { "name": "iff", "value": 748 },
-                        { "name": "isa", "value": 461 },
-                        { "name": "lt", "value": 597 },
-                        { "name": "lte", "value": 619 },
-                        { "name": "max", "value": 283 },
-                        { "name": "min", "value": 283 },
-                        { "name": "mod", "value": 591 },
-                        { "name": "mul", "value": 603 },
-                        { "name": "neq", "value": 599 },
-                        { "name": "not", "value": 386 },
-                        { "name": "or", "value": 323 },
-                        { "name": "orderby", "value": 307 },
-                        { "name": "range", "value": 772 },
-                        { "name": "select", "value": 296 },
-                        { "name": "stddev", "value": 363 },
-                        { "name": "sub", "value": 600 },
-                        { "name": "sum", "value": 280 },
-                        { "name": "update", "value": 307 },
-                        { "name": "variance", "value": 335 },
-                        { "name": "where", "value": 299 },
-                        { "name": "xor", "value": 354 },
-                        { "name": "_", "value": 264 }
-                    ]
-                },
-                { "name": "Minimum", "value": 843 },
-                { "name": "Not", "value": 1554 },
-                { "name": "Or", "value": 970 },
-                { "name": "Query", "value": 13896 },
-                { "name": "Range", "value": 1594 },
-                { "name": "StringUtil", "value": 4130 },
-                { "name": "Sum", "value": 791 },
-                { "name": "Variable", "value": 1124 },
-                { "name": "Variance", "value": 1876 },
-                { "name": "Xor", "value": 1101 }
-            ]
+                "name": "Virigin Trains",
+                "children": [
+                    { "name": "add", "value": 593 },
+                    { "name": "and", "value": 330 },
+                    { "name": "average", "value": 287 },
+                    { "name": "count", "value": 277 },
+                    { "name": "distinct", "value": 292 },
+                    { "name": "div", "value": 595 },
+                    { "name": "eq", "value": 594 },
+                    { "name": "fn", "value": 460 },
+                    { "name": "gt", "value": 603 },
+                    { "name": "gte", "value": 625 },
+                    { "name": "iff", "value": 748 },
+                    { "name": "isa", "value": 461 },
+                    { "name": "lt", "value": 597 },
+                    { "name": "lte", "value": 619 },
+                    { "name": "max", "value": 283 },
+                    { "name": "min", "value": 283 },
+                    { "name": "mod", "value": 591 },
+                    { "name": "mul", "value": 603 },
+                    { "name": "neq", "value": 599 },
+                    { "name": "not", "value": 386 },
+                    { "name": "or", "value": 323 },
+                    { "name": "orderby", "value": 307 },
+                    { "name": "range", "value": 772 },
+                    { "name": "select", "value": 296 },
+                    { "name": "stddev", "value": 363 },
+                    { "name": "sub", "value": 600 },
+                    { "name": "sum", "value": 280 },
+                    { "name": "update", "value": 307 },
+                    { "name": "variance", "value": 335 },
+                    { "name": "where", "value": 299 },
+                    { "name": "xor", "value": 354 },
+                    { "name": "_", "value": 264 }
+                ]
+            }]
         },
         {
             "name": "Food and Beverage",
@@ -233,9 +264,6 @@
                         { "name": "HeapNode", "value": 1233 }
                     ]
                 },
-                { "name": "IEvaluable", "value": 335 },
-                { "name": "IPredicate", "value": 383 },
-                { "name": "IValueProxy", "value": 874 },
                 {
                     "name": "Google Play Music",
                     "children": [
@@ -243,23 +271,7 @@
                         { "name": "IMatrix", "value": 2815 },
                         { "name": "SparseMatrix", "value": 3366 }
                     ]
-                },
-                { "name": "Maths", "value": 17705 },
-                { "name": "Orientation", "value": 1486 },
-                {
-                    "name": "palette",
-                    "children": [
-                        { "name": "ColorPalette", "value": 6367 },
-                        { "name": "Palette", "value": 1229 },
-                        { "name": "ShapePalette", "value": 2059 },
-                        { "name": "SizePalette", "value": 2291 }
-                    ]
-                },
-                { "name": "Property", "value": 5559 },
-                { "name": "Shapes", "value": 19118 },
-                { "name": "Sort", "value": 6887 },
-                { "name": "Stats", "value": 6557 },
-                { "name": "Strings", "value": 22026 }
+                }
             ]
         }
     ]
