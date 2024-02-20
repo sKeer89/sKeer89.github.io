@@ -1,5 +1,5 @@
 {
-    "name": "flare",
+    "name": "Categories",
     "children": [{
             "name": "Financial Services",
             "children": [{
@@ -129,59 +129,70 @@
             "children": [{
                     "name": "Amazon",
                     "children": [
-                        { "name": "Delivery Issues", "value": 30000 },
-                        { "name": "Product/Service Issues", "value": 25000 },
-                        { "name": "Account/Subscription Issues", "value": 20000 },
-                        { "name": "Refund/Reimbursement Issues", "value": 15000 },
-                        { "name": "Technical Support Issues ", "value": 15000 },
-                        { "name": "Communication Issues", "value": 10000 },
-                        { "name": "Billing/Payment Issues", "value": 10000 },
-                        { "name": "Quality/Defective Product Issues", "value": 8000 },
-                        { "name": "Shipping/Tracking Issues", "value": 7000 },
-                        { "name": "Website/App Glitches", "value": 6000 },
-                        { "name": "Security/Privacy Concerns", "value": 5000 },
-                        { "name": "Unauthorized Charges", "value": 4000 },
-                        { "name": "Membership/Subscription Management", "value": 3000 },
-                        { "name": "Fraudulent Sellers/Counterfeit Items", "value": 3000 },
+                        { "name": "Delivery", "value": 30000 },
+                        { "name": "Service", "value": 25000 },
+                        { "name": "Account", "value": 20000 },
+                        { "name": "Refund", "value": 15000 },
+                        { "name": "Support", "value": 15000 },
+                        { "name": "Communication", "value": 10000 },
+                        { "name": "Payment", "value": 10000 },
+                        { "name": "Quality", "value": 8000 },
+                        { "name": "Shipping", "value": 7000 },
+                        { "name": "Website/App", "value": 6000 },
+                        { "name": "Security", "value": 5000 },
+                        { "name": "Unauthorized", "value": 4000 },
+                        { "name": "Membership", "value": 3000 },
+                        { "name": "Fraud", "value": 3000 },
                         { "name": "Others", "value": 2000 }
                     ]
                 },
                 {
                     "name": "Apple",
                     "children": [
-                        { "name": "Technical Issues with Devices (iPhone, iPad, Mac, etc.)", "value": 20000 },
-                        { "name": "Software/Applications Malfunctions", "value": 15000 },
-                        { "name": "Account/Subscription Management", "value": 12000 },
-                        { "name": "Billing/Payment Issues (iTunes, App Store, etc.)", "value": 10000 },
-                        { "name": "Warranty/Repair Requests", "value": 8000 },
-                        { "name": "iCloud/Storage Issues", "value": 6000 },
-                        { "name": "Security/Privacy Concerns", "value": 5000 },
-                        { "name": "Device Activation/Setup Problems", "value": 4000 },
-                        { "name": "Order/Shipping Issues (Apple Online Store)", "value": 3000 },
-                        { "name": "Accessibility/Usability Assistance", "value": 2000 },
-                        { "name": "Apple Music/Other Subscription Services", "value": 2000 },
-                        { "name": "iTunes/App Store Content Issues", "value": 1500 },
-                        { "name": "Product Return/Exchange Requests", "value": 1000 },
-                        { "name": "Education/Training Support", "value": 500 },
-                        { "name": "AppleCare Support/Service Plans ", "value": 500 }
+                        { "name": "Devices", "value": 20000 },
+                        { "name": "Software", "value": 15000 },
+                        { "name": "Account", "value": 12000 },
+                        { "name": "Billing", "value": 10000 },
+                        { "name": "Warranty", "value": 8000 },
+                        { "name": "iCloud/", "value": 6000 },
+                        { "name": "Security", "value": 5000 },
+                        { "name": "Device Setup", "value": 4000 },
+                        { "name": "Order", "value": 3000 },
+                        { "name": "Accessibility", "value": 2000 },
+                        { "name": "Apple Music", "value": 2000 },
+                        { "name": "iTunes", "value": 1500 },
+                        { "name": "Product Return", "value": 1000 },
+                        { "name": "Education", "value": 500 },
+                        { "name": "AppleCare", "value": 500 }
                     ]
-                }, {
+                },
+                {
                     "name": "E-Bay",
                     "children": [
-                        { "name": "Converters", "value": 721 },
-                        { "name": "DelimitedTextConverter", "value": 4294 },
-                        { "name": "GraphMLConverter", "value": 9800 },
-                        { "name": "IDataConverter", "value": 1314 },
-                        { "name": "JSONConverter", "value": 2220 }
+                        { "name": "Orders", "value": 2000 },
+                        { "name": "Account", "value": 1500 },
+                        { "name": "Vendor dispute", "value": 1200 },
+                        { "name": "App/Website", "value": 1000 },
+                        { "name": "Support", "value": 800 },
+                        { "name": "Refund", "value": 600 },
+                        { "name": "Shipping", "value": 500 },
+                        { "name": "Selling", "value": 400 },
+                        { "name": "Discounts", "value": 300 },
+                        { "name": "Others", "value": 250 }
                     ]
-                }, {
+                },
+                {
                     "name": "Aldi",
                     "children": [
-                        { "name": "Converters", "value": 721 },
-                        { "name": "DelimitedTextConverter", "value": 4294 },
-                        { "name": "GraphMLConverter", "value": 9800 },
-                        { "name": "IDataConverter", "value": 1314 },
-                        { "name": "JSONConverter", "value": 2220 }
+                        { "name": "Quality", "value": 1500 },
+                        { "name": "Store service", "value": 1200 },
+                        { "name": "Discount", "value": 1000 },
+                        { "name": "Support", "value": 800 },
+                        { "name": "Inventory", "value": 700 },
+                        { "name": "Refund", "value": 600 },
+                        { "name": "Deals", "value": 500 },
+                        { "name": "Website/App", "value": 300 },
+                        { "name": "Others", "value": 312 }
                     ]
                 }
             ]
@@ -189,48 +200,14 @@
         {
             "name": "Airlines",
             "children": [
-                { "name": "American Air", "value": 4116 }
+                { "name": "American Air", "value": 6116 }
             ]
         },
         {
             "name": "Railways",
-            "children": [{
-                "name": "Virigin Trains",
-                "children": [
-                    { "name": "add", "value": 593 },
-                    { "name": "and", "value": 330 },
-                    { "name": "average", "value": 287 },
-                    { "name": "count", "value": 277 },
-                    { "name": "distinct", "value": 292 },
-                    { "name": "div", "value": 595 },
-                    { "name": "eq", "value": 594 },
-                    { "name": "fn", "value": 460 },
-                    { "name": "gt", "value": 603 },
-                    { "name": "gte", "value": 625 },
-                    { "name": "iff", "value": 748 },
-                    { "name": "isa", "value": 461 },
-                    { "name": "lt", "value": 597 },
-                    { "name": "lte", "value": 619 },
-                    { "name": "max", "value": 283 },
-                    { "name": "min", "value": 283 },
-                    { "name": "mod", "value": 591 },
-                    { "name": "mul", "value": 603 },
-                    { "name": "neq", "value": 599 },
-                    { "name": "not", "value": 386 },
-                    { "name": "or", "value": 323 },
-                    { "name": "orderby", "value": 307 },
-                    { "name": "range", "value": 772 },
-                    { "name": "select", "value": 296 },
-                    { "name": "stddev", "value": 363 },
-                    { "name": "sub", "value": 600 },
-                    { "name": "sum", "value": 280 },
-                    { "name": "update", "value": 307 },
-                    { "name": "variance", "value": 335 },
-                    { "name": "where", "value": 299 },
-                    { "name": "xor", "value": 354 },
-                    { "name": "_", "value": 264 }
-                ]
-            }]
+            "children": [
+                { "name": "Virgin Trains", "value": 6116 }
+            ]
         },
         {
             "name": "Food and Beverage",
@@ -238,37 +215,27 @@
                 { "name": "McDonalds", "value": 2105 },
                 { "name": "Taco Bell", "value": 1316 },
                 { "name": "Papa Johns", "value": 3151 },
-                { "name": "Dunkin Donuts", "value": 3770 },
-                { "name": "QuantileScale", "value": 2435 },
-                { "name": "QuantitativeScale", "value": 4839 },
-                { "name": "RootScale", "value": 1756 },
-                { "name": "Scale", "value": 4268 },
-                { "name": "ScaleType", "value": 1821 },
-                { "name": "TimeScale", "value": 5833 }
+                { "name": "Dunkin Donuts", "value": 3770 }
             ]
         },
         {
             "name": "Music Streaming",
-            "children": [
-                { "name": "Arrays", "value": 8258 },
-                { "name": "Colors", "value": 10001 },
-                { "name": "Dates", "value": 8217 },
-                { "name": "Displays", "value": 12555 },
-                { "name": "Filter", "value": 2324 },
-                { "name": "Geometry", "value": 10993 },
-                {
+            "children": [{
                     "name": "Spotify Cares",
                     "children": [
-                        { "name": "FibonacciHeap", "value": 9354 },
-                        { "name": "HeapNode", "value": 1233 }
+                        { "name": "Cat1", "value": 9354 },
+                        { "name": "Cat2", "value": 1233 }
                     ]
                 },
                 {
                     "name": "Google Play Music",
                     "children": [
-                        { "name": "DenseMatrix", "value": 3165 },
-                        { "name": "IMatrix", "value": 2815 },
-                        { "name": "SparseMatrix", "value": 3366 }
+                        { "name": "Streaming", "value": 300 },
+                        { "name": "Subscription", "value": 200 },
+                        { "name": "Payment", "value": 150 },
+                        { "name": "Support", "value": 80 },
+                        { "name": "Content quality", "value": 50 },
+                        { "name": "Others", "value": 3 }
                     ]
                 }
             ]
