@@ -35,7 +35,7 @@ function _chart(d3, data) {
     // Create the SVG container.
     const svg = d3.create("svg")
 
-    .attr("viewBox", [-700, -400, 1700, 2100])
+    .attr("viewBox", [-700, -700, 2100, 2100])
         .style("font", "10px sans-serif");
 
     // Append the arcs.
@@ -150,8 +150,8 @@ export default function define(runtime, observer) {
         }]
     ]);
     main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
-    main.variable(observer()).define(["md"], _1);
+    //main.variable(observer()).define(["md"], _1);
     main.variable(observer("chart")).define("chart", ["d3", "data"], _chart);
-    main.variable(observer("data")).define("data", ["FileAttachment"], _data);
+    //main.variable(observer("data")).define("data", ["FileAttachment"], _data);
     return main;
 }
