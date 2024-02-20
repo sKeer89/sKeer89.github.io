@@ -10,8 +10,8 @@ This variant of a [sunburst diagram](/@d3/sunburst/2?intent=fork) shows only two
 
 function _chart(d3, data) {
     // Specify the chart’s dimensions.
-    const width = 928;
-    const height = width;
+    const width = 600;
+    const height = 600;
     const radius = width / 6;
 
     // Create the color scale.
