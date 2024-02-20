@@ -5,42 +5,42 @@
             "children": [{
                     "name": "Chase",
                     "children": [
-                        { "name": "Account/Banking Inquiries", "value": 1200 },
-                        { "name": "Transaction Disputes/Unauthorized Charges", "value": 900 },
-                        { "name": "Customer Service Interaction ", "value": 700 },
-                        { "name": "Card Issues/Replacement Requests", "value": 500 },
-                        { "name": "Online/Mobile Banking Assistance", "value": 400 },
-                        { "name": "Fraud/Security Concerns", "value": 300 },
-                        { "name": "Loan/Mortgage Queries", "value": 200 },
-                        { "name": "Other/miscellaneous inquiries", "value": 348 }
+                        { "name": "Account", "value": 1200 },
+                        { "name": "Transaction", "value": 900 },
+                        { "name": "Customer Service ", "value": 700 },
+                        { "name": "Card Issues", "value": 500 },
+                        { "name": "Online issues", "value": 400 },
+                        { "name": "Fraud", "value": 300 },
+                        { "name": "Loan", "value": 200 },
+                        { "name": "Others", "value": 348 }
                     ]
                 },
                 {
                     "name": "PayPal",
                     "children": [
-                        { "name": "Payment Disputes/Unauthorized Transactions", "value": 2000 },
-                        { "name": "Account/Profile Management", "value": 1500 },
-                        { "name": "Customer Service Interaction", "value": 1000 },
-                        { "name": "Technical Issues with Website/App", "value": 1200 },
-                        { "name": "Refund/Dispute Resolution", "value": 800 },
-                        { "name": "Security/Privacy Concerns", "value": 500 },
-                        { "name": "Transaction/Payment Verification", "value": 400 },
-                        { "name": "Account Suspension/Termination", "value": 300 },
-                        { "name": "Promotions/Discounts", "value": 250 },
-                        { "name": "Fund Transfer/Withdrawal Problems", "value": 300 },
-                        { "name": "Other/miscellaneous inquiries", "value": 350 }
+                        { "name": "Payment", "value": 2000 },
+                        { "name": "Profile", "value": 1500 },
+                        { "name": "Customer Service", "value": 1000 },
+                        { "name": "Website/App", "value": 1200 },
+                        { "name": "Refund", "value": 800 },
+                        { "name": "Security", "value": 500 },
+                        { "name": "Transaction", "value": 400 },
+                        { "name": "Account", "value": 300 },
+                        { "name": "Discounts", "value": 250 },
+                        { "name": "Fund Transfer", "value": 300 },
+                        { "name": "Others", "value": 350 }
                     ]
                 },
                 {
                     "name": "Citi",
                     "children": [
-                        { "name": "Account/Banking Inquiries", "value": 600 },
-                        { "name": "Credit Card Issues/Assistance", "value": 500 },
-                        { "name": "Customer Service Interaction", "value": 400 },
-                        { "name": "Fraud/Security Concerns", "value": 200 },
-                        { "name": "Loan/Mortgage Queries", "value": 150 },
-                        { "name": "Billing/Payment Disputes", "value": 100 },
-                        { "name": "Other/miscellaneous inquiries", "value": 130 }
+                        { "name": "Account", "value": 600 },
+                        { "name": "Credit Card", "value": 500 },
+                        { "name": "Customer Service", "value": 400 },
+                        { "name": "Fraud", "value": 200 },
+                        { "name": "Loan", "value": 150 },
+                        { "name": "Billing", "value": 100 },
+                        { "name": "Others", "value": 130 }
                     ]
                 }
             ]
@@ -50,33 +50,33 @@
             "children": [{
                     "name": "Lyft",
                     "children": [
-                        { "name": "Ride Delays/Cancellations", "value": 2000 },
-                        { "name": "Billing/Payment Issues", "value": 1500 },
-                        { "name": "Customer Service Interaction", "value": 1000 },
-                        { "name": "Account/Profile Management", "value": 600 },
-                        { "name": "Safety/Security Concerns", "value": 400 },
-                        { "name": "Technical Issues with App/Platform", "value": 300 },
-                        { "name": "Other/miscellaneous inquiries", "value": 236 }
+                        { "name": "Ride Delays", "value": 2000 },
+                        { "name": "Payment", "value": 1500 },
+                        { "name": "Customer Service", "value": 1000 },
+                        { "name": "Profile", "value": 600 },
+                        { "name": "Safety", "value": 400 },
+                        { "name": "App/Platform", "value": 300 },
+                        { "name": "Others", "value": 236 }
                     ]
                 },
                 {
                     "name": "Uber",
                     "children": [
-                        { "name": "Ride Delays/Cancellations", "value": 10000 },
-                        { "name": "Billing/Charges Disputes ", "value": 8000 },
-                        { "name": "Driver Behavior/Attitude Issues", "value": 6000 },
-                        { "name": "Account/Profile Management", "value": 5000 },
-                        { "name": "App Functionality/Technical Problems", "value": 4000 },
-                        { "name": "Safety/Security Concerns", "value": 3000 },
-                        { "name": "Accessibility/Usability Assistance", "value": 2500 },
-                        { "name": "Refund/Compensation Requests", "value": 2000 },
-                        { "name": "Ride Route/Navigation Issues", "value": 1500 },
-                        { "name": "Vehicle Condition/Cleanliness", "value": 1000 },
-                        { "name": "Lost Items/Property Damage", "value": 1000 },
-                        { "name": "Promo Codes/Discounts", "value": 800 },
-                        { "name": "Support/Communication with Customer Service", "value": 700 },
-                        { "name": "Driver Verification/Background Checks", "value": 500 },
-                        { "name": "Trip Fare Estimation/Transparency ", "value": 361 }
+                        { "name": "Ride Delays", "value": 10000 },
+                        { "name": "Charges", "value": 8000 },
+                        { "name": "Driver Attitude", "value": 6000 },
+                        { "name": "Profile", "value": 5000 },
+                        { "name": "App", "value": 4000 },
+                        { "name": "Safety", "value": 3000 },
+                        { "name": "Usability", "value": 2500 },
+                        { "name": "Refund", "value": 2000 },
+                        { "name": "Navigation", "value": 1500 },
+                        { "name": "Cleanliness", "value": 1000 },
+                        { "name": "Lost Items", "value": 1000 },
+                        { "name": "Discounts", "value": 800 },
+                        { "name": "Support", "value": 700 },
+                        { "name": "Background Checks", "value": 500 },
+                        { "name": "Trip Fare", "value": 361 }
                     ]
                 }
             ]
@@ -86,41 +86,40 @@
             "children": [{
                     "name": "T-Mobile",
                     "children": [
-                        { "name": "Billing/Payment Issues", "value": 4000 },
-                        { "name": "Network/Signal Problems", "value": 3500 },
-                        { "name": "Account/Plan Management", "value": 2500 },
-                        { "name": "Customer Service Interaction", "value": 2000 },
-                        { "name": "Technical Support/Device Issues", "value": 1800 },
-                        { "name": "Coverage/Service Availability", "value": 1500 },
-                        { "name": "Data/Internet Speed Issues", "value": 1200 },
-                        { "name": "Roaming/International Usage", "value": 1000 },
-                        { "name": "Device Activation/Setup Problems", "value": 800 },
-                        { "name": "Billing/Payment Disputes", "value": 700 },
-                        { "name": "Account Termination/Cancellation", "value": 600 },
-                        { "name": "Upgrade/Device Purchase Assistance", "value": 500 },
-                        { "name": "Promotions/Discounts", "value": 400 },
-                        { "name": "Account Security/Privacy Concerns", "value": 300 },
-                        { "name": "Store/Location Experience", "value": 246 }
+                        { "name": "Payment", "value": 4000 },
+                        { "name": "Signal", "value": 3500 },
+                        { "name": "Account", "value": 2500 },
+                        { "name": "Support", "value": 2000 },
+                        { "name": "Device", "value": 1800 },
+                        { "name": "Coverage", "value": 1500 },
+                        { "name": "Data", "value": 1200 },
+                        { "name": "Roaming", "value": 1000 },
+                        { "name": "Device Setup", "value": 800 },
+                        { "name": "Cancel", "value": 600 },
+                        { "name": "Upgrade", "value": 500 },
+                        { "name": "Discounts", "value": 400 },
+                        { "name": "Security", "value": 300 },
+                        { "name": "Store Person", "value": 246 }
                     ]
                 },
                 {
                     "name": "Verizon",
                     "children": [
-                        { "name": "Billing/Payment Issues", "value": 3500 },
-                        { "name": "Network/Signal Problems", "value": 3000 },
-                        { "name": "Account/Plan Management", "value": 2500 },
-                        { "name": "Customer Service Interaction", "value": 2000 },
-                        { "name": "Technical Support/Device Issues", "value": 1800 },
-                        { "name": "Coverage/Service Availability", "value": 1500 },
-                        { "name": "Data/Internet Speed Issues", "value": 1200 },
-                        { "name": "Roaming/International Usage", "value": 1000 },
-                        { "name": "Device Activation/Setup Problems", "value": 800 },
-                        { "name": "Billing/Payment Disputes", "value": 700 },
-                        { "name": "Account Termination/Cancellation", "value": 600 },
-                        { "name": "Upgrade/Device Purchase Assistance", "value": 500 },
-                        { "name": "Promotions/Discounts", "value": 400 },
-                        { "name": "Account Security/Privacy Concerns", "value": 300 },
-                        { "name": "Store/Location Experience", "value": 296 }
+                        { "name": "Billing", "value": 3500 },
+                        { "name": "Network", "value": 3000 },
+                        { "name": "Plan", "value": 2500 },
+                        { "name": "Support", "value": 2000 },
+                        { "name": "Device", "value": 1800 },
+                        { "name": "Coverage", "value": 1500 },
+                        { "name": "Data", "value": 1200 },
+                        { "name": "Roaming", "value": 1000 },
+                        { "name": "Device Setup", "value": 800 },
+                        { "name": "Payment", "value": 700 },
+                        { "name": "Cancellation", "value": 600 },
+                        { "name": "Upgrade", "value": 500 },
+                        { "name": "Discounts", "value": 400 },
+                        { "name": "Security", "value": 300 },
+                        { "name": "Store", "value": 296 }
                     ]
                 }
             ]
