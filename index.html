@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Viz</title>
+	<meta name="description" content="An exploration of audio visualizers powered by p5.js" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="fontawesome-all.min.css">
+	<script>
+	document.documentElement.className = 'js';
+	</script>
+</head>
+
+<body id="body" class="demo-1">
+	<main class="site-wrapper">
+		<div class="content main">
+			<div id="fixed-div"></div>
+
+			<div class="instructions">
+				<div class="text">KEYPRESS ACTIONS<br>[Enter] &rarr; change color scheme<br> [Space] &rarr; toggle play / pause <br>Number keys ([0]-[9]) &rarr; select from pre-loaded songs.</div>
+				<div class="enternumber">Enter a number to change the pre-loaded track.</div>
+				<div class="switchtrack"><input id="tracknum" type="number"></input></div>
+			</div>
+
+			<div class="canvas-wrapper">
+				<div id="p5_loading" class="p5_loading">
+					<div class="p5_loading__inner">
+						<span></span>
+					</div>
+				</div>
+				<div id="uploading-animation" class="p5_loading">
+					<div class="p5_loading__inner">
+						<span></span>
+					</div>
+				</div>
+				<canvas id="webglcanvas"></canvas>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="d3.v4.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
