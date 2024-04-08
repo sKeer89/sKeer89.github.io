@@ -2,49 +2,63 @@
 <html lang="en" class="no-js">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Music Viz</title>
-	<meta name="description" content="An exploration of audio visualizers powered by p5.js" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="stylesheet" href="fontawesome-all.min.css">
-	<script>
-	document.documentElement.className = 'js';
-	</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Viz</title>
+    <meta name="description" content="An exploration of audio visualizers powered by p5.js" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-all.min.css">
+    <script>
+        document.documentElement.className = 'js';
+    </script>
 </head>
 
 <body id="body" class="demo-1">
-	<main class="site-wrapper">
-		<div class="content main">
-			<div id="fixed-div"></div>
+    <main class="site-wrapper">
+        <div class="content main">
+            <div id="fixed-div"></div>
 
-			<div class="instructions">
-				<div class="text">KEYPRESS ACTIONS<br>[Enter] &rarr; change color scheme<br> [Space] &rarr; toggle play / pause <br>Number keys ([0]-[9]) &rarr; select from pre-loaded songs.</div>
-				<div class="enternumber">Enter a number to change the pre-loaded track.</div>
-				<div class="switchtrack"><input id="tracknum" type="number"></input></div>
-			</div>
+            <div class="instructions">
+                <div class="text">Select your mood for the day!!</div>
+                <div class="instructions">
+                    <div class="dropdown-style">
+                        <select id="tracknum" class="dropdown-btn">
+							<option value="1">Feeling on top of the world!</option>
+							<option value="2">Need a little comfort today.</option>
+							<option value="3">Have an exam tomorrow?</option>
+							<option value="4">Exploring the wonders around me.</option>
+							<option value="5">Ready to groove and move</option>
+							<option value="6">In the mood for love.</option>
+							<option value="7">Brighter days are ahead!</option>
+							<option value="8">Feeling worried!</option>
+							<option value="9">Can feel the serenity now</option>
+							<option value="10">Really tired, fed up!</option>
+						</select>
+                    </div>
+                </div>
+            </div>
 
-			<div class="canvas-wrapper">
-				<div id="p5_loading" class="p5_loading">
-					<div class="p5_loading__inner">
-						<span></span>
-					</div>
-				</div>
-				<div id="uploading-animation" class="p5_loading">
-					<div class="p5_loading__inner">
-						<span></span>
-					</div>
-				</div>
-				<canvas id="webglcanvas"></canvas>
-			</div>
-		</div>
-	</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="d3.v4.min.js"></script>
-	<script src="script.js"></script>
+            <div class="canvas-wrapper">
+                <div id="p5_loading" class="p5_loading">
+                    <div class="p5_loading__inner">
+                        <span></span>
+                    </div>
+                </div>
+                <div id="uploading-animation" class="p5_loading">
+                    <div class="p5_loading__inner">
+                        <span></span>
+                    </div>
+                </div>
+                <canvas id="webglcanvas"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="d3.v4.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
