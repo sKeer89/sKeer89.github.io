@@ -211,6 +211,9 @@ window.addEventListener('load', function() {
 
     selectElement.addEventListener('change', function() {
         var value = this.value;
+        if (value <= 10) {
+            play_new_song(value);
+        }
         console.log('Track selected:', value);
     });
 });
