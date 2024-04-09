@@ -161,7 +161,6 @@ canvas {
     color: currentColor;
     position: absolute;
     bottom: 2vmax;
-    top: 2vmax;
     border: 1px solid;
     width: 150px;
 }
