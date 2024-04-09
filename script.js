@@ -1,4 +1,4 @@
-var pieces, radius, fft, mapMouseX, mapMouseY, toggleBtn, audio, audios, uploadBtn, uploadedAudio, uploadAnim;
+var pieces, radius, fft, mapMouseX, mapMouseY, toggleBtn, audio, audios, uploadBtn, uploadedAudio, uploadAnim, textInput;
 
 // COLOR SCHEME
 // background, inner (bass), middle (mid), outer (treble)
