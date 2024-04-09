@@ -87,7 +87,7 @@ function setup() {
     userInfoDiv.style('font-family', '"Roboto", sans-serif');
     userInfoDiv.style('font-size', '0.85rem');
     userInfoDiv.style('box-sizing', 'border-box');
-    userInfoDiv.style('background', 'rgba(0, 0, 0, 0.8)');
+    userInfoDiv.style('background', 'transparent');
     userInfoDiv.style('border-radius', '5px');
     userInfoDiv.style('z-index', '10');
 
