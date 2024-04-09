@@ -132,9 +132,8 @@ canvas {
     letter-spacing: 0.05em;
     color: white;
     position: relative;
-    top: 3vmin;
-    bottom: 4vmax;
-    width: 400px;
+    top: 2vmin;
+    width: 200px;
     display: block;
     z-index: 1;
 }
