@@ -11,19 +11,29 @@ var palettes = [colorPalette1, colorPalette2, colorPalette3, colorPalette4, colo
 var state = 0;
 var colorPalette = palettes[state];
 var uploadLoading = false;
-
-var artists = ["Tash Sultana", "A R I Z O N A", "Mac Miller", "Masego, FKJ", "Roy Irwin", "Lennon Stella", "Big Wild", "Mumford & Sons", "Travis Scott", "Glass Animals (feat. Denzel Curry)"];
+/*
+Feeling on top of the world! - Kawhi Kabhi aditi
+Need a little comfort today. - All too well
+Have an exam tomorrow? - ME
+Exploring the wonders around me. - Starlight
+Ready to groove and move - Shake it off
+In the mood for love. - Paper rings
+Brighter days are ahead! - You are on your kid
+Feeling worried! - Daylight
+Can feel the serenity now - Cardigan
+Really tired, fed up! - Illicit affairs */
+var artists = ["Tash Sultana", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift"];
 var songs = ["Notion", "Where I Wanna Be", "Dunno", "Tadow", "Demon's Cave", "Games", "Awaken", "I Will Wait", "HIGHEST IN THE ROOM", "Tokyo Drifting"];
-var tracks = ["tracks/TashSultana-Notion.mp3",
-    "tracks/ARIZONA-Where.mp3",
-    "tracks/MacMiller-Dunno.mp3",
-    "tracks/Masego, FKJ - Tadow.mp3",
-    "tracks/RoyIrwin-DemonsCave.mp3",
-    "tracks/Lennon Stella - Games.mp3",
-    "tracks/Big Wild - Awaken.mp3",
-    "tracks/Mumford-IWillWait.mp3",
-    "tracks/TravisScott-Highest.mp3",
-    "tracks/GlassAnimalsDenzelCurry-TokyoDrifting.mp3"
+var tracks = ["track/Kabhi kabhi Aditi.mp3",
+    "track/Taylor Swift - All to well.mp3",
+    "track/Taylor Swift - Me.mp3",
+    "track/Taylor Swift - Starlight.mp3",
+    "track/Taylor Swift - Shake it off.mp3",
+    "tracks/Taylor Swift - Paper Rings.mp3", //6 - 1 = 5
+    "track/Taylor Swift - You are your own kid.mp3",
+    "track/daylight.mp3",
+    "track/Taylor Swift - Cardigan.mp3",
+    "track/taylor-swift-illicit-affairs-official-lyric-video.mp3"
 ];
 
 function preload() {
@@ -211,8 +221,8 @@ window.addEventListener('load', function() {
 
     selectElement.addEventListener('change', function() {
         var value = this.value;
-        if (value <= 10) {
-            play_new_song(value);
+        if (value > 0 && value <= 10) {
+            play_new_song(value - 1);
         }
         console.log('Track selected:', value);
     });
