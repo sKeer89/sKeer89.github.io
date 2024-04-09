@@ -33,7 +33,7 @@ a:focus {
     pointer-events: none;
 }
 
-.dropdown-style {
+.dropdown-btn {
     background: transparent;
     color: currentColor;
 }
@@ -251,4 +251,21 @@ input[type="number"],
         left: 10px;
         width: calc(100% - 20px);
     }
+}
+
+.text-input {
+    content: "Hello";
+    display: block;
+    /* Make sure it's a block element to allow for margin and other spacing */
+    margin: 20px auto;
+    /* Adds space above and centers horizontally */
+    padding: 10px;
+    border: 1px solid #fff;
+    /* Example styling */
+    background-color: transparent;
+    /* Example styling */
+    color: #fff;
+    /* Example styling */
+    width: 80%;
+    /* Example width */
 }

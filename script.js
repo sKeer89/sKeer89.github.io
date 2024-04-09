@@ -73,6 +73,8 @@ function setup() {
     uploadBtn.addClass("upload-btn");
     toggleBtn.addClass("toggle-btn");
     toggleBtn.mousePressed(toggleAudio);
+    textInput = createInput('default text');
+    textInput.addClass("text-input");
     fft = new p5.FFT();
     audio.pause();
 }
