@@ -22,8 +22,8 @@ Brighter days are ahead! - You are on your kid
 Feeling worried! - Daylight
 Can feel the serenity now - Cardigan
 Really tired, fed up! - Illicit affairs */
-var artists = ["Tash Sultana", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift"];
-var songs = ["Notion", "All too well", "ME", "Starlight", "Shake it off", "Paper Rings", "You're on your own kid", "Daylight", "Cardigan", "Illicit Affairs"];
+var artists = ["Bollywood", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift", "Taylor Swift"];
+var songs = ["JTYJN", "All too well", "ME", "Starlight", "Shake it off", "Paper Rings", "You're on your own kid", "Daylight", "Cardigan", "Illicit Affairs"];
 var tracks = ["track/Kabhi kabhi Aditi.mp3",
     "track/Taylor Swift - All to well.mp3",
     "track/Taylor Swift - Me.mp3",
@@ -36,9 +36,7 @@ var tracks = ["track/Kabhi kabhi Aditi.mp3",
     "track/taylor-swift-illicit-affairs-official-lyric-video.mp3"
 ];
 
-function preload() {
-    audio = loadSound("tracks/TashSultana-Notion.mp3");
-}
+
 
 function manual_load(path) {
     uploadedAudio = loadSound(path, uploadedAudioPlay);
@@ -81,7 +79,7 @@ function setup() {
     userInfoDiv.style('position', 'absolute');
     userInfoDiv.style('width', '400px');
     userInfoDiv.style('left', '85%');
-    userInfoDiv.style('top', 'calc(100% - 150px)');
+    userInfoDiv.style('top', 'calc(100% - 210px)');
     userInfoDiv.style('transform', 'translateX(-50%)');
     userInfoDiv.style('border', '1px solid');
     userInfoDiv.style('font-family', '"Roboto", sans-serif');
