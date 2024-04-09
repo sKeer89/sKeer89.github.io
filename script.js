@@ -79,9 +79,9 @@ function setup() {
     userInfoDiv.style('text-align', 'center');
     userInfoDiv.style('color', 'white');
     userInfoDiv.style('position', 'absolute');
-    userInfoDiv.style('width', '300px');
+    userInfoDiv.style('width', '400px');
     userInfoDiv.style('left', '50%');
-    userInfoDiv.style('top', 'calc(100% - 150px)');
+    userInfoDiv.style('top', 'calc(100% - 170px)');
     userInfoDiv.style('transform', 'translateX(-50%)');
     userInfoDiv.style('border', '1px solid red');
     userInfoDiv.style('font-family', '"Roboto", sans-serif');
