@@ -139,6 +139,20 @@ canvas {
     z-index: 1;
 }
 
+.i1 {
+    padding: 10px;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    color: white;
+    position: relative;
+    top: 3vmin;
+    bottom: 4vmax;
+    width: 400px;
+    display: block;
+    z-index: 1;
+}
+
 .upload-btn::before,
 .toggle-btn {
     padding: 10px;
