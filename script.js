@@ -228,14 +228,7 @@ $("#body").dblclick(function() {
 window.addEventListener('keypress', function(e) {
     var keyCode = e.keyCode;
 
-    // audio switching
-    if (keyCode >= 48 && keyCode <= 57) {
-        var index = keyCode - 48;
-        play_new_song(index);
-    }
-
-    // color scheme switching [Enter]
-    else if (keyCode == 13) {
+    if (keyCode == 13) {
         if (state < 4)
             state += 1;
         else
