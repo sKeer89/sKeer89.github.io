@@ -2,11 +2,11 @@ var pieces, radius, fft, mapMouseX, mapMouseY, toggleBtn, audio, audios, uploadB
 
 // COLOR SCHEME
 // background, inner (bass), middle (mid), outer (treble)
-var colorPalette1 = ["#000", "#753456", "#FF8E8E", "#FFB1B1"]; //pink FFB1B1
-var colorPalette2 = ["#000", "#CF9D63", "#F29F70", "#FFC353"]; //orange
-var colorPalette3 = ["#000", "#799985", "#4c956c", "#A1C765"]; //green
-var colorPalette4 = ["#000", "#739EAD", "#87CEFA", "#2D7AB3"]; //blue
-var colorPalette5 = ["#000", "#837BD0", "#814F9C", "#8D509C"]; //purple
+var colorPalette1 = ["#3B3131", "#753456", "#FF8E8E", "#FFB1B1" ]; 
+var colorPalette2 = ["#25383C", "#CF9D63", "#F29F70", "#FFC353"];  
+var colorPalette3 = ["#666362", "#799985", "#4c956c", "#A1C765"];  
+var colorPalette4 = ["#566D7E", "#739EAD", "#87CEFA", "#2D7AB3"];
+var colorPalette5 = ["#254117", "#837BD0", "#814F9C", "#8D509C"];
 var palettes = [colorPalette1, colorPalette2, colorPalette3, colorPalette4, colorPalette5];
 var state = 0;
 var colorPalette = palettes[state];
@@ -150,32 +150,42 @@ function draw() {
         stroke(colorPalette[1]);
         scale(scale_bass);
         rotate(frameCount * -0.5);
-        line(map_bass, radius / 2, radius, radius);
-        line(-map_bass, -radius / 2, radius, radius);
+        triangle(0, radius / 2, map_bass, radius, -map_bass, radius);
         pop();
 
 
 
         /*----------  MID  ----------*/
-        push();
+		push();
         strokeWeight(0.5);
         stroke(colorPalette[2]);
         scale(scale_mid);
-        line(map_mid, radius / 2, radius, radius);
-        line(-map_mid, -radius / 2, radius, radius);
+        ellipse(0, radius / 2, map_mid);
         pop();
 
 
         /*----------  TREBLE  ----------*/
         push();
-        stroke(colorPalette[3]);
-        scale(scale_treble);
-        line(map_treble, radius / 2, radius, radius);
-        line(-map_treble, -radius / 2, radius, radius);
-        pop();
+		strokeWeight(0.5);
+		stroke(colorPalette[2]);
+		scale(scale_mid);
+		octagon(0, radius / 2, 50); // Draw octagon
+		pop();
 
     }
 
+}
+
+// Function to draw an octagon
+function octagon(x, y, radius) {
+    var angle = TWO_PI / 8;
+    beginShape();
+    for (var i = 0; i < TWO_PI; i += angle) {
+        var sx = x + cos(i) * radius;
+        var sy = y + sin(i) * radius;
+        vertex(sx, sy);
+    }
+    endShape(CLOSE);
 }
 
 
