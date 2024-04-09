@@ -36,7 +36,9 @@ var tracks = ["track/Kabhi kabhi Aditi.mp3",
     "track/taylor-swift-illicit-affairs-official-lyric-video.mp3"
 ];
 
-
+function preload() {
+    audio = loadSound("track/Taylor Swift - You are your own kid.mp3");
+}
 
 function manual_load(path) {
     uploadedAudio = loadSound(path, uploadedAudioPlay);
