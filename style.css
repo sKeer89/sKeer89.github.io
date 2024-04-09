@@ -132,8 +132,9 @@ canvas {
     letter-spacing: 0.05em;
     color: white;
     position: relative;
-    top: 2vmin;
-    width: 200px;
+    top: 3vmin;
+    bottom: 4vmax;
+    width: 400px;
     display: block;
     z-index: 1;
 }
@@ -147,6 +148,7 @@ canvas {
     color: currentColor;
     position: absolute;
     bottom: 2vmax;
+    top: 2vmax;
     border: 1px solid;
     width: 150px;
 }
@@ -155,13 +157,13 @@ canvas {
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: currentColor;
     position: absolute;
     bottom: 0.002vmax;
     left: 0.15vmax;
     border: 2px solid;
-    width: 250px;
+    width: 300px;
 }
 
 .upload-btn::before {
