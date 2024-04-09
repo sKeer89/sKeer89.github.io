@@ -73,8 +73,31 @@ function setup() {
     uploadBtn.addClass("upload-btn");
     toggleBtn.addClass("toggle-btn");
     toggleBtn.mousePressed(toggleAudio);
-    textInput = createInput('default text');
-    textInput.addClass("text-input");
+
+    let userInfoDiv = createDiv('Hello Kitty fhdgfdbn bf dhgbhfdgh fhguhfdghfdj user_id is unique and immutable and uniquely identifies a user<br>Password stores the hash value of the user’s password');
+    userInfoDiv.style('padding', '10px');
+    userInfoDiv.style('text-align', 'center');
+    userInfoDiv.style('color', 'white');
+    userInfoDiv.style('position', 'absolute');
+    userInfoDiv.style('width', '300px');
+    userInfoDiv.style('left', '50%');
+    userInfoDiv.style('transform', 'translateX(-50%)');
+    userInfoDiv.style('top', 'calc(100% - 100px)');
+    userInfoDiv.style('border', '1px solid red');
+    userInfoDiv.style('font-family', '"Roboto", sans-serif');
+    userInfoDiv.style('font-size', '0.85rem');
+    userInfoDiv.style('box-sizing', 'border-box');
+    userInfoDiv.style('background', 'rgba(0, 0, 0, 0.8)');
+    userInfoDiv.style('border-radius', '5px');
+    userInfoDiv.style('z-index', '10');
+
+    // Add the div to the canvas wrapper, assuming there is one
+    let canvasWrapper = select('.canvas-wrapper');
+    if (canvasWrapper) {
+        canvasWrapper.child(userInfoDiv);
+    } else {
+        document.body.appendChild(userInfoDiv.elt);
+    }
     fft = new p5.FFT();
     audio.pause();
 }
