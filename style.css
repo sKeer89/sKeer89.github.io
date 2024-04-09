@@ -184,6 +184,7 @@ canvas {
     content: "Add your own song";
     display: inline-block;
     left: 2vmax;
+    width: 300px;
     outline: none;
     white-space: nowrap;
     -webkit-user-select: none;
@@ -197,7 +198,7 @@ canvas {
 .toggle-btn {
     background: transparent;
     color: currentColor;
-    right: 2vmax;
+    right: 6vmax;
 }
 
 .dropdown-btn {
