@@ -81,9 +81,8 @@ function setup() {
     userInfoDiv.style('position', 'absolute');
     userInfoDiv.style('width', '300px');
     userInfoDiv.style('left', '50%');
-    userInfoDiv.style('bottom', '2vmax');
+    userInfoDiv.style('top', 'calc(100% - 150px)');
     userInfoDiv.style('transform', 'translateX(-50%)');
-    userInfoDiv.style('top', 'calc(100% - 100px)');
     userInfoDiv.style('border', '1px solid red');
     userInfoDiv.style('font-family', '"Roboto", sans-serif');
     userInfoDiv.style('font-size', '0.85rem');
