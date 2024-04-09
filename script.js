@@ -2,9 +2,9 @@ var pieces, radius, fft, mapMouseX, mapMouseY, toggleBtn, audio, audios, uploadB
 
 // COLOR SCHEME
 // background, inner (bass), middle (mid), outer (treble)
-var colorPalette1 = ["#3B3131", "#753456", "#FF8E8E", "#FFB1B1" ]; 
-var colorPalette2 = ["#25383C", "#CF9D63", "#F29F70", "#FFC353"];  
-var colorPalette3 = ["#666362", "#799985", "#4c956c", "#A1C765"];  
+var colorPalette1 = ["#3B3131", "#753456", "#FF8E8E", "#FFB1B1"];
+var colorPalette2 = ["#25383C", "#CF9D63", "#F29F70", "#FFC353"];
+var colorPalette3 = ["#666362", "#799985", "#4c956c", "#A1C765"];
 var colorPalette4 = ["#566D7E", "#739EAD", "#87CEFA", "#2D7AB3"];
 var colorPalette5 = ["#254117", "#837BD0", "#814F9C", "#8D509C"];
 var palettes = [colorPalette1, colorPalette2, colorPalette3, colorPalette4, colorPalette5];
@@ -81,7 +81,7 @@ function setup() {
     userInfoDiv.style('position', 'absolute');
     userInfoDiv.style('width', '400px');
     userInfoDiv.style('left', '85%');
-    userInfoDiv.style('top', 'calc(100% - 170px)');
+    userInfoDiv.style('top', 'calc(100% - 190px)');
     userInfoDiv.style('transform', 'translateX(-50%)');
     userInfoDiv.style('border', '1px solid');
     userInfoDiv.style('font-family', '"Roboto", sans-serif');
@@ -156,7 +156,7 @@ function draw() {
 
 
         /*----------  MID  ----------*/
-		push();
+        push();
         strokeWeight(0.5);
         stroke(colorPalette[2]);
         scale(scale_mid);
@@ -166,11 +166,11 @@ function draw() {
 
         /*----------  TREBLE  ----------*/
         push();
-		strokeWeight(0.5);
-		stroke(colorPalette[2]);
-		scale(scale_mid);
-		octagon(0, radius / 2, 50); // Draw octagon
-		pop();
+        strokeWeight(0.5);
+        stroke(colorPalette[2]);
+        scale(scale_mid);
+        octagon(0, radius / 2, 50); // Draw octagon
+        pop();
 
     }
 
