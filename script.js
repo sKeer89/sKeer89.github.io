@@ -74,16 +74,16 @@ function setup() {
     toggleBtn.addClass("toggle-btn");
     toggleBtn.mousePressed(toggleAudio);
 
-    let userInfoDiv = createDiv('Hello Kitty fhdgfdbn bf dhgbhfdgh fhguhfdghfdj user_id is unique and immutable and uniquely identifies a user<br>Password stores the hash value of the user’s password');
+    let userInfoDiv = createDiv('Your privacy and preferences are important to us. The dashboard is designed to respect your data and personal settings without compromising on the user experience');
     userInfoDiv.style('padding', '10px');
     userInfoDiv.style('text-align', 'center');
     userInfoDiv.style('color', 'white');
     userInfoDiv.style('position', 'absolute');
-    userInfoDiv.style('width', '300px');
-    userInfoDiv.style('left', '50%');
-    userInfoDiv.style('top', 'calc(100% - 150px)');
+    userInfoDiv.style('width', '400px');
+    userInfoDiv.style('left', '90%');
+    userInfoDiv.style('top', 'calc(100% - 170px)');
     userInfoDiv.style('transform', 'translateX(-50%)');
-    userInfoDiv.style('border', '1px solid red');
+    userInfoDiv.style('border', '1px solid');
     userInfoDiv.style('font-family', '"Roboto", sans-serif');
     userInfoDiv.style('font-size', '0.85rem');
     userInfoDiv.style('box-sizing', 'border-box');
