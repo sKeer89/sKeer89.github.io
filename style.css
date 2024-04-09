@@ -164,6 +164,7 @@ canvas {
     bottom: 2vmax;
     border: 1px solid;
     width: 150px;
+    right: 3vmax;
 }
 
 .dropdown-btn {
@@ -180,7 +181,7 @@ canvas {
 }
 
 .upload-btn::before {
-    content: "Upload a Track";
+    content: "Add your own song";
     display: inline-block;
     left: 2vmax;
     outline: none;
