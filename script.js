@@ -40,7 +40,7 @@ function preload() {
     audio = loadSound("track/Taylor Swift - You are your own kid.mp3");
 }
 
-function manual_load(path) {
+function loadMan(path) {
     uploadedAudio = loadSound(path, uploadedAudioPlay);
 }
 
@@ -207,7 +207,7 @@ function windowResized() {
 $("#tracknum").focus(function() { $(this).val(""); });
 
 function play_new_song(index) {
-    manual_load(tracks[index]);
+    loadMan(tracks[index]);
     this.document.getElementById("fixed-div").innerHTML = artists[index] + "<br>" + songs[index];
     $("#fixed-div").slideDown();
     this.setTimeout(function() {
