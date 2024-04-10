@@ -1,9 +1,7 @@
-# Your music Visualization dashboard
-Exploring music visualizations using the P5.js library
+# Your Music Visualization dashboard
+Tech: P5.js, HTML, CSS
+### Access the dashboard here [here](https://skeer89.github.io/)
 
-### Play with it [here](https://skeer89.github.io/)
-
-### Usability Notes:  
 * Use the drop downs to listen to a song as per your mood, or upload your own!
 * Press [Enter] to switch color scheme
 * Press [Space] to toggle pause / play
