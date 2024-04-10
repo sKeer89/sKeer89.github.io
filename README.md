@@ -1,6 +1,6 @@
 # Your Music Visualization dashboard
 Tech: P5.js, HTML, CSS
-### Access the dashboard here [here](https://skeer89.github.io/)
+### Steps to run: Access the dashboard [here](https://skeer89.github.io/)
 
 * Use the drop downs to listen to a song as per your mood, or upload your own!
 * Press [Enter] to switch color scheme
